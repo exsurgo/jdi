@@ -5,21 +5,10 @@ app.controller('TaskCtrl', function TaskCtrl($scope, $location, taskStorage, fil
     $scope.newTask = "";
     $scope.editedTask = null;
 
-    $scope.$watch('tasks', function () {
-        $scope.remainingCount = filterFilter(tasks, {completed: false}).length;
-        $scope.doneCount = tasks.length - $scope.remainingCount;
-        $scope.allChecked = !$scope.remainingCount
-        taskStorage.put(tasks);
-    }, true);
+    // details
+    $scope.showDetails = function($scope) {
 
-    if ($location.path() === '') $location.path('/');
-    $scope.location = $location;
-
-    $scope.$watch('location.path()', function (path) {
-        $scope.statusFilter = (path == '/active') ?
-        { completed: false } : (path == '/completed') ?
-        { completed: true } : null;
-    });
+    };
 
     // add
     $scope.addTask = function () {

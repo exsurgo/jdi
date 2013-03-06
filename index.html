@@ -20,13 +20,13 @@
         <div class="layout-content">
             <div class="layout-left">
                 <div class="layout-pane">
-                    <ul ng-repeat="task in tasks" class="unstyled {{task.when}}">
+                    <ul ng-repeat="task in tasks" class="unstyled {{task.when.toLowerCase()}}" ng-click="showDetails()" ng-model="task">
                         <div class="header"><h2>{{task.when}}</h2></div>
                         <li >
                             <span class="indicator"></span><span class="time-circle">time</span><span class="info">
-                                    <div class="task-name">{{task.label}}</div>
-                                    <div class="task-date">{{task.when}}</div>
-                                </span>
+                                <div class="task-name">{{task.label}}</div>
+                                <div class="task-date">{{task.when}}</div>
+                            </span>
                         </li>
                     </ul>
 

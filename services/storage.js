@@ -5,10 +5,10 @@ app.factory( 'taskStorage', function() {
   return {
     get: function() {
       return [
-          { label: "Take out trash", when: "today" },
-          { label: "Due Laundry", when: "soon" },
-          { label: "Wash Dishes", when: "someday" },
-          { label: "Mop Floor", when: "late" }
+          { label: "Take out trash", when: "Today" },
+          { label: "Due Laundry", when: "Soon" },
+          { label: "Wash Dishes", when: "Someday" },
+          { label: "Mop Floor", when: "Late" }
       ];
       //return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');
     },
