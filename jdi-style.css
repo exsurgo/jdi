@@ -1,27 +1,24 @@
 body {
-	font-family: "Roboto", Helvetica, sans-serif !important;
+	font-family: "Roboto" !important;
 	background: black;
 	color: rgb(230,230,230);
 }
 .title {
-	color: white;
+	color: rgb(31,31,31);
 	background-color: rgb(100,175,25);
 	font-size: 8px;
-	font-weight: bold;
-	border-radius: 50px;
+	border-radius: 10px;
 	font-weight: bold;
 	display: inline-block;
 	height: 20px;
 	width: 20px;
-	margin:6px;
+	margin:10px;
 	text-align: center;
 	line-height: 20px;
-	border: 2px solid white;
 }
 .add-button {
-	font-family: Helvetica;
 	color: black;
-	font-size: 12px;
+	font-size: 14px;
 	background-color: white;
 	font-size: 24px;
 	border-radius: 10px;
@@ -29,9 +26,9 @@ body {
 	display: inline-block;
 	height: 20px;
 	width: 20px;
-	margin: 10px;
+	margin:10px;
 	text-align: center;
-	line-height: 18px;
+	line-height: 20px;
 	cursor: pointer;
 }
 .add-button:hover {
@@ -61,8 +58,6 @@ body {
 .info-container {
 	background-color: rgb(31,31,31);
 	color: rgb(184,184,184);
-	border-left: 1px black solid;
-	-webkit-box-shadow: -5px 0px 5px rgba(0,0,0,0.4);
 }
 
 .unstyled .header {
@@ -70,22 +65,15 @@ body {
 }
 .unstyled li {
 	height: 40px;
-	cursor: pointer;
 }
 .unstyled li:not(:last-child) {
 	border-bottom: 1px rgb(31,31,31) solid;
-}
-.unstyled li:hover {
-	background-color: rgb(31,31,31);
-}
-.unstyled .selected  {
-	background-color: rgb(60,60,60);
 }
 .unstyled h2 {
 	margin-bottom: 0px !important;
 	margin-top: 0.5em;
 	font-size: 2.4em;
-	line-height: 0.78em;
+	line-height: 0.70em;
 }
 .unstyled .indicator {
 	width: 5px;
@@ -95,24 +83,16 @@ body {
 	background-color: white;
 }
 .unstyled .time-circle {
-	width: 30px;
-	height: 30px;
-	border-radius:20px;
-	margin: 3px;
-	border: 2px white solid;
-	background-color: rgb(31,31,31);
+	width: 40px;
+	height: 40px;
+	background-color: darkgrey;
 	display: block;
 	float: left;
-	font-size: 10px;
-	color: white;
-	line-height: 30px;
-	text-align: center;
 }
 .unstyled .info {
 	float: left;
 	display: block;
 	color: white;
-	margin-left: 5px;
 	height: 40px;
 	min-width:100px;
 }
@@ -133,47 +113,12 @@ body {
 .someday .header {
 	border-color: rgb(75, 150, 100);
 }
+
 .buttons-list {
 	text-align: center;
-	background-color: rgba(0,0,0,0.1);
-	border-top: 1px black solid;
 }
 .buttons-list span {
-	height: 16px;
+	height: 20px;
 	display: inline-block;
-	border: 1px rgb(60,60,60) solid;
-	padding: 5px;
-	width: 80px;
-	cursor:pointer;
-	line-height: 16px;
-	margin-top: 7px;
-}
-.buttons-list span:hover {
-	background-color: rgba(255,255,255,0.1);
-}
-.buttons-list span:active {
-	background-color: rgba(0,0,0,0.1);
-}
-.task-info-header {
-	background-color: rgb(100,175,25);
-	color: rgb(31,31,31);
-	width: 80;
-	font-size:12px;
-	font-weight: bold;
-	text-align: center;
-	height: 28px;
-	margin-left:15px;
-	line-height: 28px
-}
-.task-info-text {
-	margin-left: 15px;
-	margin-right: 15px;
-	color: white;
-}
-.layout-inner-header {
-	border-top: 2px rgb(100,175,25) solid;
-
-}
-.layout-inner-content {
-	-webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+	border: 1px white solid;
 }
