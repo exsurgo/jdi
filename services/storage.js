@@ -4,7 +4,13 @@ app.factory( 'taskStorage', function() {
 
   return {
     get: function() {
-      return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');
+      return [
+          { label: "Take out trash", when: "today" },
+          { label: "Due Laundry", when: "soon" },
+          { label: "Wash Dishes", when: "someday" },
+          { label: "Mop Floor", when: "late" }
+      ];
+      //return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');
     },
 
     put: function( tasks ) {
