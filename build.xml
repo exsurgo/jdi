@@ -13,7 +13,11 @@
 	</target>
 
 	<target name="-after-build">
-		<echo>build.dir: ${workspace.build.dir}</echo>
+		<copy todir="${build.dir}/resources" includeEmptyDirs="false">
+			<fileset dir="${app.dir}/resources" 
+					 includes="**/*"/>
+		</copy>
+
 		<delete file="${workspace.build.dir}/app.zip"/>
 		<zip destfile="${workspace.build.dir}/app.zip">
 			<fileset dir="${build.dir}" includes="**/*"/>
