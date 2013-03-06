@@ -10,6 +10,7 @@
 	<target name="-before-init">
 	    <property name="skip.sass" value="1"/>
 	    <property name="skip.theme" value="1"/>
+        <property name="build.compression.production" value=""/>
 	</target>
 
 	<target name="-after-build">
