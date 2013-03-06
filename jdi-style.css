@@ -1,0 +1,119 @@
+body {
+	font-family: "Roboto" !important;
+	background: black;
+	color: rgb(230,230,230);
+}
+.title {
+	color: rgb(31,31,31);
+	background-color: rgb(100,175,25);
+	font-size: 8px;
+	border-radius: 10px;
+	font-weight: bold;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin:10px;
+	text-align: center;
+	line-height: 20px;
+}
+.add-button {
+	color: black;
+	font-size: 14px;
+	background-color: white;
+	font-size: 24px;
+	border-radius: 10px;
+	font-weight: bold;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin:10px;
+	text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+}
+.add-button:hover {
+	background-color:rgb(184,184,184);
+}
+.add-button:active {
+	background-color:rgb(75,75,75);
+}
+
+.late {
+	color: rgb(200, 40, 20);
+}
+.today {
+	color: rgb(200, 180, 120);
+}
+.soon {
+	color: rgb(50, 150, 150);
+}
+.someday {
+	color: rgb(75, 150, 100);
+}
+
+.top-header {
+	border-bottom: 1px rgb(31,31,31) solid;
+}
+
+.info-container {
+	background-color: rgb(31,31,31);
+	color: rgb(184,184,184);
+}
+
+.unstyled .header {
+	border-bottom: 1px white solid;
+}
+.unstyled li {
+	height: 40px;
+}
+.unstyled li:not(:last-child) {
+	border-bottom: 1px rgb(31,31,31) solid;
+}
+.unstyled h2 {
+	margin-bottom: 0px !important;
+	margin-top: 0.5em;
+	font-size: 2.4em;
+	line-height: 0.70em;
+}
+.unstyled .indicator {
+	width: 5px;
+	height: 40px;
+	display: block;
+	float: left;
+	background-color: white;
+}
+.unstyled .time-circle {
+	width: 40px;
+	height: 40px;
+	background-color: darkgrey;
+	display: block;
+	float: left;
+}
+.unstyled .info {
+	float: left;
+	display: block;
+	color: white;
+	height: 40px;
+	min-width:100px;
+}
+.task-name, .task-date {
+	height: 20px;
+	font-size: 10px;
+	line-height: 20px;
+}
+.late .header {
+	border-color: rgb(200, 40, 20);
+}
+.today .header {
+	border-color: rgb(200, 180, 120);
+}
+.soon .header {
+	border-color: rgb(50, 150, 150);
+}
+.someday .header {
+	border-color: rgb(75, 150, 100);
+}
+
+.buttons-list {
+	text-align: center;
+}
