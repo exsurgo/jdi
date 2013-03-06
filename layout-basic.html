@@ -1,0 +1,104 @@
+<html>
+<head>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<style type="text/css">
+		/* generic */
+		.layout-container { width: 100%; height: 100%; }
+		.layout-header { position: absolute; left: 0px; top: 0px; right: 0px; }
+		.layout-content { position: absolute; left: 0px; right: 0px; }
+		.layout-left {  position: absolute; top: 0px; left: 0px; bottom: 0px; }
+		.layout-center { position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; }
+		.layout-right { position: absolute; top: 0px; right: 0px; bottom: 0px; }
+		.layout-footer { position: absolute; left: 0px; bottom: 0px; right: 0px; }
+		.layout-pane { height: 100%; height: 100%; overflow: auto; } 
+		/* specific */
+		.layout-header { border-bottom: 1px solid red; height: 40px; }
+		.layout-content { top: 40px; bottom: 0px; }
+		.layout-left { border-right: 1px solid green; width: 50%; }
+		.layout-right { border-left: 1px solid orange; width: 50%; }
+		.layout-footer { border-top: 1px solid blue; height: 40px; }
+		/* specific inner */
+		.layout-inner-pane { }
+		.layout-inner-header { border-bottom: 1px solid red; height: 40px; }
+		.layout-inner-content { top: 40px; bottom: 40px; }
+		.layout-inner-footer { border-top: 1px solid blue; height: 40px; }
+		.layout-half-header { width: 50%; }
+		.add-button { float:right; }
+	</style>
+</head>
+<body>
+<div class="layout-container">
+	<div class="layout-header">
+		<div class="layout-half-header">
+			<span class="title">JDI</span>
+			<span class="add-button">add</span>
+		</div>
+	</div>
+	<div class="layout-content">
+		<div class="layout-left">
+			<div class="layout-pane">
+				<ul class="now">
+					<div class="header">NOW</div>
+					 <li>
+					 	<div class="task.checked"></div>
+					 	<!--<input type="checkbox" {{task.checked}}></input>-->
+						<span>task.name</span>
+						<span>task.date</span>
+						<button>delete</button>
+					</li>
+				</ul>
+				<ul class="soon">
+					<div class="header">SOON</div>
+					 <li>
+					 	<div class="task.checked"></div>
+					 	<!--<input type="checkbox" {{task.checked}}></input>-->
+						<span>task.name</span>
+						<span>task.date</span>
+						<button>delete</button>
+					</li>
+				</ul>
+				<ul class="later">
+					<div class="header">LATER</div>
+					 <li>
+					 	<div class="task.checked"></div>
+					 	<!--<input type="checkbox" {{task.checked}}></input>-->
+						<span>task.name</span>
+						<span>task.date</span>
+						<button>delete</button>
+					</li>
+				</ul>
+				<ul class="late">
+					<div class="header">LATE</div>
+					 <li>
+					 	<div class="task.checked"></div>
+					 	<!--<input type="checkbox" {{task.checked}}></input>-->
+						<span>task.name</span>
+						<span>task.date</span>
+						<button>delete</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="layout-right">
+			<div class="layout-header layout-inner-header">
+				Header
+			</div>
+			<div class="layout-content layout-inner-content">
+				<div class="layout-pane">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+			<div class="layout-footer layout-inner-footer">
+				Footer
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
