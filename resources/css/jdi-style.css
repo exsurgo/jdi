@@ -1,24 +1,27 @@
 body {
-	font-family: "Roboto" !important;
+	font-family: "Roboto", Helvetica, sans-serif !important;
 	background: black;
 	color: rgb(230,230,230);
 }
 .title {
-	color: rgb(31,31,31);
+	color: white;
 	background-color: rgb(100,175,25);
 	font-size: 8px;
-	border-radius: 10px;
+	font-weight: bold;
+	border-radius: 50px;
 	font-weight: bold;
 	display: inline-block;
 	height: 20px;
 	width: 20px;
-	margin:10px;
+	margin:6px;
 	text-align: center;
 	line-height: 20px;
+	border: 2px solid white;
 }
 .add-button {
+	font-family: Helvetica;
 	color: black;
-	font-size: 14px;
+	font-size: 12px;
 	background-color: white;
 	font-size: 24px;
 	border-radius: 10px;
@@ -26,9 +29,9 @@ body {
 	display: inline-block;
 	height: 20px;
 	width: 20px;
-	margin:10px;
+	margin: 10px;
 	text-align: center;
-	line-height: 20px;
+	line-height: 18px;
 	cursor: pointer;
 }
 .add-button:hover {
@@ -58,6 +61,8 @@ body {
 .info-container {
 	background-color: rgb(31,31,31);
 	color: rgb(184,184,184);
+	border-left: 1px black solid;
+	-webkit-box-shadow: -5px 0px 5px rgba(0,0,0,0.4);
 }
 
 .unstyled .header {
@@ -65,15 +70,22 @@ body {
 }
 .unstyled li {
 	height: 40px;
+	cursor: pointer;
 }
 .unstyled li:not(:last-child) {
 	border-bottom: 1px rgb(31,31,31) solid;
+}
+.unstyled li:hover {
+	background-color: rgb(31,31,31);
+}
+.unstyled .selected  {
+	background-color: rgb(60,60,60);
 }
 .unstyled h2 {
 	margin-bottom: 0px !important;
 	margin-top: 0.5em;
 	font-size: 2.4em;
-	line-height: 0.70em;
+	line-height: 0.78em;
 }
 .unstyled .indicator {
 	width: 5px;
@@ -121,17 +133,20 @@ body {
 .someday .header {
 	border-color: rgb(75, 150, 100);
 }
-
 .buttons-list {
 	text-align: center;
+	background-color: rgba(0,0,0,0.1);
+	border-top: 1px black solid;
 }
 .buttons-list span {
-	height: 20px;
+	height: 16px;
 	display: inline-block;
 	border: 1px rgb(60,60,60) solid;
 	padding: 5px;
 	width: 80px;
 	cursor:pointer;
+	line-height: 16px;
+	margin-top: 7px;
 }
 .buttons-list span:hover {
 	background-color: rgba(255,255,255,0.1);
@@ -184,3 +199,6 @@ body {
 .layout-inner-footer { height: 40px; }
 .layout-half-header { width: 50%; }
 .add-button { float:right; }
+.layout-inner-content {
+	-webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+}
