@@ -12,93 +12,96 @@
 		.layout-footer { position: absolute; left: 0px; bottom: 0px; right: 0px; }
 		.layout-pane { height: 100%; height: 100%; overflow: auto; } 
 		/* specific */
-		.layout-header { border-bottom: 1px solid red; height: 40px; }
+		.layout-header { height: 40px; }
 		.layout-content { top: 40px; bottom: 0px; }
-		.layout-left { border-right: 1px solid green; width: 50%; }
-		.layout-right { border-left: 1px solid orange; width: 50%; }
-		.layout-footer { border-top: 1px solid blue; height: 40px; }
+		.layout-left { width: 50%; }
+		.layout-right { width: 50%; }
+		.layout-footer { height: 40px; }
 		/* specific inner */
 		.layout-inner-pane { }
-		.layout-inner-header { border-bottom: 1px solid red; height: 40px; }
+		.layout-inner-header {h eight: 40px; }
 		.layout-inner-content { top: 40px; bottom: 40px; }
-		.layout-inner-footer { border-top: 1px solid blue; height: 40px; }
+		.layout-inner-footer { height: 40px; }
 		.layout-half-header { width: 50%; }
 		.add-button { float:right; }
 	</style>
+	<link href="css/jdi-style.css" rel="stylesheet" media="screen">
 </head>
 <body>
 <div class="layout-container">
-	<div class="layout-header">
+	<div class="layout-header top-header">
 		<div class="layout-half-header">
 			<span class="title">JDI</span>
-			<span class="add-button">add</span>
+			<span class="add-button">+</span>
 		</div>
 	</div>
 	<div class="layout-content">
 		<div class="layout-left">
 			<div class="layout-pane">
-				<ul class="now">
-					<div class="header">NOW</div>
+				<ul class="unstyled today">
+					<div class="header"><h2>TODAY</h2></div>
 					 <li>
-					 	<div class="task.checked"></div>
-					 	<!--<input type="checkbox" {{task.checked}}></input>-->
-						<span>task.name</span>
-						<span>task.date</span>
-						<button>delete</button>
+					 	<span class="indicator"></span><span class="time-circle"></span><span class="info">
+					 		<div class="task-name">task-name</div>
+					 		<div class="task-date">task-date</div>
+					 	</span>
+					</li>
+					<li>
+					 	<span class="indicator"></span><span class="time-circle"></span><span class="info">
+					 		<div class="task-name">task-name</div>
+					 		<div class="task-date">task-date</div>
+					 	</span>
 					</li>
 				</ul>
-				<ul class="soon">
-					<div class="header">SOON</div>
+				<ul class="unstyled soon">
+					<div class="header"><h2>SOON</h2></div>
 					 <li>
-					 	<div class="task.checked"></div>
-					 	<!--<input type="checkbox" {{task.checked}}></input>-->
-						<span>task.name</span>
-						<span>task.date</span>
-						<button>delete</button>
+					 	<span class="indicator"></span><span class="time-circle"></span><span class="info">
+					 		<div class="task-name">task-name</div>
+					 		<div class="task-date">task-date</div>
+					 	</span>
 					</li>
 				</ul>
-				<ul class="later">
-					<div class="header">LATER</div>
+				<ul class="unstyled someday">
+					<div class="header"><h2>SOMEDAY</h2></div>
 					 <li>
-					 	<div class="task.checked"></div>
-					 	<!--<input type="checkbox" {{task.checked}}></input>-->
-						<span>task.name</span>
-						<span>task.date</span>
-						<button>delete</button>
+					 	<span class="indicator"></span><span class="time-circle"></span><span class="info">
+					 		<div class="task-name">task-name</div>
+					 		<div class="task-date">task-date</div>
+					 	</span>
 					</li>
 				</ul>
-				<ul class="late">
-					<div class="header">LATE</div>
+				<ul class="unstyled late">
+					<div class="header"><h2>LATE</h2></div>
 					 <li>
-					 	<div class="task.checked"></div>
-					 	<!--<input type="checkbox" {{task.checked}}></input>-->
-						<span>task.name</span>
-						<span>task.date</span>
-						<button>delete</button>
+					 	<span class="indicator"></span><span class="time-circle"></span><span class="info">
+					 		<div class="task-name">task-name</div>
+					 		<div class="task-date">task-date</div>
+					 	</span>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<div class="layout-right">
+		<div class="layout-right info-container">
 			<div class="layout-header layout-inner-header">
-				Header
+				Task Info
 			</div>
 			<div class="layout-content layout-inner-content">
 				<div class="layout-pane">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					info here
 				</div>
 			</div>
-			<div class="layout-footer layout-inner-footer">
-				Footer
+			<div class="layout-footer layout-inner-footer buttons-list">
+				<span class="check-button">Check</span>
+				<span class="edit-button">Edit</span>
+				<span class="remove-button">Remove</span>
 			</div>
 		</div>
 	</div>
 </div>
 
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="http://code.jquery.com/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>-->
 
 </body>
 </html>
